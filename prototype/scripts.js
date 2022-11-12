@@ -1,28 +1,42 @@
 console.log("commissioned by the IJA Burner Trust");
+import { showHome, showAbout, showNews, showVideos, showBlog, showContact, showPriv} from "./lib/pageSwitch.js  ";
 
-(function(){
+
+(function () {
     // pointers
-    const propaView = document.getElementById("propa");
+    const switchBtns = document.querySelectorAll(".sw-btns");
 
-
-    // view swaps
-    const showHome = () => {
-        const heroFrag = document.createDocumentFragment();
-        const banDiv = document.createElement("div");
-        const panicBtn = document.createElement("span");
-
-        banDiv.classList.add("yealol");
-        panicBtn.classList.add("panic-btn");
-        panicBtn.classList.add("bait");
-
-        panicBtn.innerText = "AHHHHHHHHHHH!";
-
-        banDiv.appendChild(panicBtn);
-        heroFrag.appendChild(banDiv);
-
-        propaView.innerText = "";
-        propaView.appendChild(heroFrag);
-    }
+    switchBtns.forEach(e => {
+        e.addEventListener("click", () => {
+            console.log(e.id);
+            switch (e.id) {
+                case "home":
+                    showHome();
+                    break;
+                case "about":
+                    showAbout();
+                    break;
+                case "news":
+                    showNews();
+                    break;
+                case "videos":
+                    showVideos();
+                    break;
+                case "blog":
+                    showBlog();
+                    break;
+                case "contr":
+                    showContact();
+                    break;
+                    case "priv":
+                    showPriv();
+                    break;
+                default:
+                    showHome();
+                    break;
+            }
+        });
+    })
 
     showHome();
 })();
