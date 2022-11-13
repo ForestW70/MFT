@@ -1,3 +1,6 @@
+import { blogPosts } from "./blogs.js";
+import { expTerms } from "./showTerms.js";
+
 // view swaps
 
 const propaView = document.getElementById("propa");
@@ -31,6 +34,7 @@ export const showHome = () => {
 export const showAbout = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
+    consImg.classList.add("under-con");
     consImg.src = "https://c.tenor.com/X6i3RTlXpmAAAAAM/under-construction-men-at-work.gif";
 
     propaFrag.appendChild(consImg);
@@ -43,6 +47,7 @@ export const showAbout = () => {
 export const showNews = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
+    consImg.classList.add("under-con");
     consImg.src = "https://media.tenor.com/Qr-XdO8yvJkAAAAM/under-construction.gif";
 
     propaFrag.appendChild(consImg);
@@ -55,6 +60,7 @@ export const showNews = () => {
 export const showVideos = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
+    consImg.classList.add("under-con");
     consImg.src = "https://i.pinimg.com/originals/eb/1b/27/eb1b27863813653543914d222ceb9cd0.gif";
 
     propaFrag.appendChild(consImg);
@@ -67,10 +73,39 @@ export const showVideos = () => {
 export const showBlog = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
+    consImg.classList.add("under-con");
     consImg.src = "https://64.media.tumblr.com/f0da7c50d726e64c6c0d8a985240b6f4/dfbbb68a95adf2d4-ce/s250x400/afe73dd5883647200c53408018ed3be99b567b80.gif";
 
-    propaFrag.appendChild(consImg);
-    propaFrag.appendChild(consText);
+    // propaFrag.appendChild(consImg);
+    // propaFrag.appendChild(consText);
+
+    // meat
+    blogPosts.map(e => {
+        const pTitle = document.createElement("h3");
+        const pAuth = document.createElement("span");
+        const pImg = document.createElement("img");
+        const pBody = document.createElement("p");
+
+        pTitle.innerText = e.postTitle;
+        pAuth.innerText = `Posted by: ${e.postAuth} on ${e.postDate}`;
+        pImg.src = e.postImg;
+        pBody.innerText = e.postBody;
+
+        const pCont = document.createElement("article");
+        pCont.classList.add("blog-post");
+        pCont.appendChild(pTitle);
+        pCont.appendChild(pAuth);
+        pCont.appendChild(pImg);
+        e.postBody.map(ee => {
+            const newParagraph = document.createElement("p");
+            newParagraph.innerText = ee.par;
+            pCont.appendChild(newParagraph);
+
+        })
+
+        propaFrag.appendChild(pCont);
+
+    })
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);
@@ -79,6 +114,7 @@ export const showBlog = () => {
 export const showContact = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
+    consImg.classList.add("under-con");
     consImg.src = "https://media0.giphy.com/media/QZIcGPmYMclva/giphy.gif?cid=790b7611fa2c4398428e3ad0b848e97a0bd2c1390b07a17b&rid=giphy.gif&ct=g";
 
     propaFrag.appendChild(consImg);
@@ -91,11 +127,17 @@ export const showContact = () => {
 export const showPriv = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
+    consImg.classList.add("under-con");
     consImg.src = "https://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif";
 
-    propaFrag.appendChild(consImg);
-    propaFrag.appendChild(consText);
+    const pageTitle = document.createElement("p");
+    pageTitle.innerText = "Terms, Conditions, and Privacy"
+
+    const newFill = expTerms();
+    // propaFrag.appendChild(consImg);
+    // propaFrag.appendChild(consText);
 
     propaView.innerText = "";
-    propaView.appendChild(propaFrag);
+    propaView.appendChild(pageTitle);
+    propaView.appendChild(newFill);
 }
