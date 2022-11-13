@@ -120,7 +120,7 @@ h1, h2 {
 /* Home Body */
 .yealol {
     background-size: cover;
-    background-image: url(./madman.png);
+    background-image: url(./imgs/madman.png);
     background-position: 50%;
     background-repeat: no-repeat;
     min-width: 100%;
