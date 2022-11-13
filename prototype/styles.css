@@ -24,6 +24,10 @@ body {
     text-align: center;
 }
 
+.allum {
+    display: inline;
+}
+
 
 /* Header */
 .hero-bar {
@@ -88,6 +92,10 @@ h1, h2 {
     font-weight: 900;
     border-radius: 100px;
     display: none;
+}
+
+.social a {
+    text-decoration: none;
 }
 
 .bait {
@@ -158,7 +166,9 @@ h1, h2 {
 
 .blog-post {
     margin: 30px 200px;
-    border-top: 5px dotted blue;
+    padding: 0 15px;
+    border-top: 15px solid cornflowerblue;;
+    border-style: double;
 }
 
 .blog-post h3 {
@@ -171,9 +181,9 @@ h1, h2 {
 .blog-post img {
     margin: 30px 30px 30px 0;
     height: 200px;
-    width: 200px;
+    width: 197px;
     float: left;
-
+    border: 10px inset blanchedalmond;
 }
 
 .blog-post span {

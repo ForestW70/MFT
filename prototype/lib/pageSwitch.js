@@ -1,5 +1,6 @@
 import { blogPosts } from "./blogs.js";
 import { expTerms } from "./showTerms.js";
+import { flexCons } from "./constructionGifs.js";
 
 // view swaps
 
@@ -48,7 +49,7 @@ export const showNews = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
     consImg.classList.add("under-con");
-    consImg.src = "https://media.tenor.com/Qr-XdO8yvJkAAAAM/under-construction.gif";
+    consImg.src = "https://thumbs.gfycat.com/AdolescentDizzyHare-size_restricted.gif";
 
     propaFrag.appendChild(consImg);
     propaFrag.appendChild(consText);
@@ -113,12 +114,13 @@ export const showBlog = () => {
 
 export const showContact = () => {
     const propaFrag = document.createDocumentFragment();
-    const consImg = document.createElement("img");
-    consImg.classList.add("under-con");
-    consImg.src = "https://media0.giphy.com/media/QZIcGPmYMclva/giphy.gif?cid=790b7611fa2c4398428e3ad0b848e97a0bd2c1390b07a17b&rid=giphy.gif&ct=g";
+    // const consImg = document.createElement("img");
+    // consImg.classList.add("under-con");
+    // consImg.src = "https://media0.giphy.com/media/QZIcGPmYMclva/giphy.gif?cid=790b7611fa2c4398428e3ad0b848e97a0bd2c1390b07a17b&rid=giphy.gif&ct=g";
 
-    propaFrag.appendChild(consImg);
+    const consImg = flexCons();
     propaFrag.appendChild(consText);
+    propaFrag.appendChild(consImg);
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);
