@@ -21,6 +21,7 @@ body {
     margin: 25px 0 150px 0;
     font-size: 30px;
     font-family: system-ui;
+    text-align: center;
 }
 
 
@@ -36,35 +37,39 @@ body {
 
 .hboy {
     background-color: white;
-    padding: 15px 30px 30px 15px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    padding: 0px 15px 5px 5px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 100%;
+    width: auto;
 }
 
 h1, h2 {
     /* background-color: white; */
     font-family: serif;
     padding: 15px;
-    font-size: 3vmax;
+    font-size: 2rem;
     color: #94011c;
-    text-shadow: 20px 20px 2px #a8b6ff;
-    margin: 0;
+    text-shadow: 30px 20px 2px #a8b6ff;
+    
     
 }
 
 .views {
-    padding-left: 50px;
+    padding-left: 25px;
 
 }
 
 .views span {
-    padding: 7px;
+    padding: 3px;
     border-left: 5px grey;
     vertical-align: middle;
     font-family: sans-serif;
     font-variant: petite-caps;
     color: white;
     border-left: 3px solid #0E5496;
+    font-size: .7rem;
+    display: block;
 }
 
 .views span:first-child {
@@ -72,28 +77,35 @@ h1, h2 {
 }
 
 .social {
-    padding-left: 50px;
+    padding-left: 5px;
 }
 
 .social span {
-    padding: 10px;
+    padding: 7px;
     margin: 5px;
     background-color: white;
     font-family: monospace;
     font-weight: 900;
     border-radius: 100px;
+    display: none;
 }
 
 .bait {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    margin-left:15px;
+    margin-left: 15px;
     font-family: sans-serif;
+    display: none;
 }
 
 .hero-bar span:hover {
     cursor: grab;
+}
+
+/* contact */
+#sellSoul input, #sellSoul {
+    text-align: center;
 }
 
 
@@ -107,6 +119,11 @@ h1, h2 {
     min-height: 100%;
     height: 600px;
 
+}
+
+.yealol img {
+    height: 100px;
+    width: 123px;
 }
 
 .panic-btn {
@@ -196,3 +213,68 @@ section p p {
 }
 
 
+/* breakpoints */
+
+@media screen and (min-width: 500px) {
+    h1{
+        font-size: 1rem;
+    }
+    .views span {
+        display: inline;
+        padding: 7px;
+    }
+    .hero-bar {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1, h2 {
+        font-size: 1rem;
+    }
+    .hboy {
+        padding: 0px 30px 30px 15px;
+    }
+    .views span {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1, h2 {
+        font-size: 2rem;
+    }
+    .social span {
+        display: block;
+    }
+    .hero-bar {
+        height: 110px;
+    }
+    .hboy {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    h1, h2 {
+        font-size: 3rem;
+    }
+    .hero-bar {
+        height: 150px;
+    }
+    .views span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1337px) {
+    .social span{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .bait {
+        display: flex;
+    }
+}
