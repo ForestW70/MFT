@@ -50,5 +50,23 @@ export const blogPosts = [
             }
         ]
     },
+    {
+        postId: 3,
+        postTitle: "Functional improvements",
+        postDate: "November 3rd, 2022",
+        postAuth: "Admin",
+        postImg: "https://image.cagle.com/266266/750/266266.png",
+        postBody: [
+            {
+                par: "Well we're wrapping up here on development, almost time to deploy this very important and sophisticated site to the world. I've been really pumped about how the R&D that went into making this page. We'll be using the most state-of-the-art tech availible. The performance and accessibility are out of this world."
+            },
+            {
+                par: "Hey, Marble Freedom Trust folks, thanks for sponsoring such an exciting endeavor. It's just been a blast working with Marble Freedom Trust, they've trusted me with their marble, and gave me the freedom to follow my dreams. The generous seed of their patrons hath showered upon both me and my developer's lifes. The stiphon I was able to provide for our loved Graphics sourcer, Tyler Green, was able to feed his 13 kids for the next 90 days. Tyler, and all of us at burDev truly thank you."
+            },
+            {
+                par: "We will be constantly adding content and improvements to this site (as well as providing blog and news updates from our *ahem* generous affiliates....), so keep your eyes peeled and utilize ever square intch of this metaphorical playground. I am.. quite aware that our patrons know how to contact us, but for all other inquirers, please reach out to admin@burnthis.space."
+            }
+        ]
+    }
 ]
 

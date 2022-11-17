@@ -104,7 +104,7 @@ export const showBlog = () => {
 
         })
 
-        propaFrag.appendChild(pCont);
+        propaFrag.insertBefore(pCont, propaFrag.firstChild);
 
     })
 
