@@ -193,16 +193,13 @@ h1, h2 {
 }
 
 .blog-post p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-indent: 40px;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 /* terms and Privacy */
-#termsNPriv {
-    font-family: cursive;
-    font-size: .5rem;
-}
+
 
 .hide {
     display: none;
@@ -214,12 +211,13 @@ h1, h2 {
     text-decoration: underline;
     font-weight: 600;
     font-style: italic;
-    font-size: 1rem;    
+    font-size: 1rem;   
+    font-family: monospace; 
 }
 
 section p p {
     text-align: justify;
-    font-family: monospace;
+    font-family: cursive;
 }
 
 

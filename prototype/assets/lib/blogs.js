@@ -1,6 +1,6 @@
 export const blogPosts = [
     {
-        postId: 1,
+        postId: 0,
         postTitle: "Hello World",
         postDate: "October 13th, 2022",
         postAuth: "Jamie",
@@ -18,7 +18,7 @@ export const blogPosts = [
         ]
     },
     {
-        postId: 2,
+        postId: 1,
         postTitle: "Drats, more red tape!",
         postDate: "October 28th, 2022",
         postAuth: "Jamie",
@@ -67,6 +67,22 @@ export const blogPosts = [
                 par: "We will be constantly adding content and improvements to this site (as well as providing blog and news updates from our *ahem* generous affiliates....), so keep your eyes peeled and utilize ever square intch of this metaphorical playground. I am.. quite aware that our patrons know how to contact us, but for all other inquirers, please reach out to admin@burnthis.space."
             }
         ]
-    }
+    },
+    {
+        postId: 4,
+        postTitle: "Marble Freedom Trust is ONLINE!",
+        postDate: "November 8th, 2022",
+        postAuth: "Jamie",
+        postImg: "https://i.ebayimg.com/images/g/d64AAOSwpOdiSGLX/s-l500.jpg",
+        postBody: [
+            {
+                par: "TODAY'S THE DAY! Not only an important day for all americans as they get to exersize their right to vote away their freedoms if they so choose, but also an important day for ME! Jamie! My page has been complete, and the blogs can now be released!"
+            },
+            {
+                par: "My thoughts, of course, are very smart and important. You all are so lucky to be witnessing such an event! We are waging war on the MAN. And on his PLAN to CAN our religious rights! And right to societal Homogony! And let's not forget about the WOMAN too because if you ask me, they've been getting spoiled with all these 'rights' we've been giving them. Of course all women deserve a fairly comparable amount of respect, but come on sugar buns how about you grab me a Fast 990 and my Waterman Carène Fountain Pen L'essence du Bleu, daddy's got some business to take care of."
+            },
+            
+        ]
+    },
 ]
 
