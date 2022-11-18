@@ -1,7 +1,7 @@
 export const redacter = {
     albumTitle: "Redacter",
     albumArtist: "L. Mauro",
-    albumArt: "",
+    albumArt: "../imgs/redacter.png",
     rLabel: "Burner Records",
     releaseDate: "November 8th 2022",
     trackTotal: 9,
@@ -23,7 +23,7 @@ export const redacter = {
             titleAbr: "dsgttctcotc?",
             titleFull: "Does Slitting Ginni Thomas's Throat Count Towards Carbon Offset Tax Credits?",
             tracklength: "12:50",
-            src: ""
+            src: "https://forestw70.github.io/sketches-bcc-client/assets/music/RE-3-DSGTTCTCOTC.mp3"
         },
         {
             titleAbr: "g,a16yowaar15a600roa/pf",

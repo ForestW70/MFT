@@ -28,6 +28,17 @@ body {
     display: inline;
 }
 
+/* player */
+#player {
+    background-color: red;
+    border: 10px double;
+    width: 75%;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: yellow;
+    border-radius: 100px;
+}
 
 /* Header */
 .hero-bar {
@@ -179,6 +190,10 @@ h1, h2 {
 .song-row {
     padding: 10px;
     cursor: progress;
+}
+
+.selected-track {
+    background-color: aquamarine;
 }
 
 .song-row:hover {
