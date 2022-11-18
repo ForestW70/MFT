@@ -1,6 +1,7 @@
 import { blogPosts } from "./blogs.js";
 import { expTerms } from "./showTerms.js";
 import { flexCons } from "./constructionGifs.js";
+import { createPlayer } from "./showPlayer.js";
 
 // view swaps
 
@@ -60,12 +61,14 @@ export const showNews = () => {
 
 export const showVideos = () => {
     const propaFrag = document.createDocumentFragment();
-    const consImg = document.createElement("img");
-    consImg.classList.add("under-con");
-    consImg.src = "https://i.pinimg.com/originals/eb/1b/27/eb1b27863813653543914d222ceb9cd0.gif";
+    // const consImg = document.createElement("img");
+    // consImg.classList.add("under-con");
+    // consImg.src = "https://i.pinimg.com/originals/eb/1b/27/eb1b27863813653543914d222ceb9cd0.gif";
 
-    propaFrag.appendChild(consImg);
-    propaFrag.appendChild(consText);
+    // propaFrag.appendChild(consImg);
+    // propaFrag.appendChild(consText);
+
+    propaFrag.appendChild(createPlayer());
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);
