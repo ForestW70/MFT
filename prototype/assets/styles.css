@@ -162,6 +162,35 @@ h1, h2 {
     margin-top: 10px;
 }
 
+/* "videos" */
+.big-man-up-top {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.meta-data {
+    font-size: .9rem;
+    font-weight: 800;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    color: darkmagenta;
+}
+
+.song-row {
+    padding: 10px;
+    cursor: progress;
+}
+
+.song-row:hover {
+    background-color: greenyellow;
+    
+}
+
+.song-row span {
+    padding: 3px 10px;
+    font-family: sans-serif;
+}
+
 /* Blog posts */
 
 .blog-post {
