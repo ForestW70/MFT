@@ -9,6 +9,7 @@ export const createPlayer = () => {
 
     artist.classList.add("big-man-up-top");
     aImg.src = redacter.albumArt;
+    aImg.classList.add("lmr-art");
     metaTags.classList.add("meta-data");
     title.innerText = redacter.albumTitle;
     artist.innerText = redacter.albumArtist;

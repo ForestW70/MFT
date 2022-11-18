@@ -40,6 +40,11 @@ audio::-webkit-media-controls-timeline {
     border-radius: 100px;
 }
 
+.lmr-art {
+    height: 200px;
+    width: 200px;
+}
+
 /* Header */
 .hero-bar {
     display: flex;
