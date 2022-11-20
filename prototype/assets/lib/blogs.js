@@ -28,7 +28,7 @@ export const blogPosts = [
                 par: "Well, I was just informed by the admin that this page actually wont even be ready yet until close to the election, so all these posts I've been sending them have just been piling up in their inbox. I guess a lot of them are a bit 'unusable', which frankly I don't understand. I am trying to help save this fucking world and honestly I felt sharing my family recipe of pecan pies would be helpful. Even in a small way, you know?"
             },
             {
-                par: "In any case, just a quick heads up that some of our blog posts may be a bit behind as I make admin catchup with posting these. I told them to put this one in the fast lane and post it next, but boy they've got a backlog of about 30, 40 posts now? Not just from myself by the way, but from our other lovely ADs Elizibeth and Thom (mine are probably the most important though)."
+                par: "In any case, just a quick heads up that some of our blog posts may be a bit behind as I make admin catchup with posting these. I told them to put this one in the fast lane and post it next, but boy they've got a backlog of about 30, 40 posts now? Not just from myself by the way, but from our other lovely ADs Elizebith and Thom (mine are probably the most important though)."
             },
             {
                 par: "So keep an eye out for our transmissions, you won't want to miss it. We will be telling YOU everything YOU need to know. This November 8th, be sure to vote. Vote Red and vote hard. Let's keep our religious grips around the necks of the divergers. This is G*d's desire. Give that one a pray why don't you."
@@ -80,6 +80,22 @@ export const blogPosts = [
             },
             {
                 par: "My thoughts, of course, are very smart and important. You all are so lucky to be witnessing such an event! We are waging war on the MAN. And on his PLAN to CAN our religious rights! And right to societal Homogony! And let's not forget about the WOMAN too because if you ask me, they've been getting spoiled with all these 'rights' we've been giving them. Of course all women deserve a fairly comparable amount of respect, but come on sugar buns how about you grab me a Fast 990 and my Waterman Carène Fountain Pen L'essence du Bleu, daddy's got some business to take care of."
+            },
+            
+        ]
+    },
+    {
+        postId: 5,
+        postTitle: "Hello Americans, The News Section is Now Availible",
+        postDate: "November 10th, 2022",
+        postAuth: "Elizebith",
+        postImg: "https://cdn.pixabay.com/photo/2016/04/26/07/57/woman-1353825__340.png",
+        postBody: [
+            {
+                par: "Hello Americans, The News Section is Now Availible"
+            },
+            {
+                par: "My name is Elizebith and I will be reposting you the lasted news about our trust, our doner, and our leader. Please have a look and educate yourself. Your individual interpretation is very important to us."
             },
             
         ]
