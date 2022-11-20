@@ -16,11 +16,46 @@ export const conGifs = [
 
 export const flexCons = () => {
     const allGifs = document.createDocumentFragment();
-    conGifs.forEach(e => {
-        const img = document.createElement("img");
-        img.classList.add("allum")
-        img.src = e;
-        allGifs.appendChild(img)
+    const conCont = document.createElement("section");
+    conCont.classList.add("con-grid");
+    conGifs.forEach((e, i) => {
+        if (i === 4) {
+            const contract4U = document.createElement("div");
+            const inq = document.createElement("p");
+            const yes = document.createElement("button");
+            const no = document.createElement("button");
+
+            contract4U.classList.add("binding-contract");
+            inq.innerText = "Would you like to enter a binding contract with us?";
+            yes.innerText = "YES";
+            // yes.id = "proceed";
+            no.innerText = "NO";
+            // no.id = "coward";
+
+            yes.addEventListener("click", () => {
+                window.alert("Good, please see this page for more information about how you can further intwine with our values.")
+                window.location.href = "https://judicialnetwork.com/";
+            })
+
+            no.addEventListener("click", () => {
+                window.alert("You are clearly not ready.")
+                window.location.href = "https://www.google.ru";
+            })
+
+            contract4U.appendChild(inq);
+            contract4U.appendChild(yes);
+            contract4U.appendChild(no);
+            conCont.appendChild(contract4U);
+            allGifs.appendChild(conCont);
+        } else {
+            const img = document.createElement("img");
+            img.classList.add("allum")
+            img.src = e;
+            conCont.appendChild(img);
+            allGifs.appendChild(conCont);
+        }
+
+        // allGifs.appendChild(conCont);
     })
     return allGifs;
 }

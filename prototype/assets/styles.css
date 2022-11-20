@@ -127,6 +127,35 @@ h1, h2 {
     cursor: grab;
 }
 
+/* contract */
+.con-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    
+}
+
+.con-grid > * {
+    margin:2px;
+}
+
+.binding-contract {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 5px blue inset;
+}
+
+.binding-contract p {
+    font-size: 2rem;
+    padding: 0 10px
+}
+
+.binding-contract button {
+    width: 30%;
+    margin: 5px auto;
+}
+
 /* contact */
 #sellSoul input, #sellSoul {
     text-align: center;
@@ -188,19 +217,35 @@ h1, h2 {
     background-color: #6bef50;
 }
 
+.news-art:first-child {
+    border: 3px solid black;
+    border-style: dashed;
+}
+
+.news-art:first-child::before {
+    /* content: url(./assets/new.gif); */
+}
+
 .news-art h3 {
     margin: 0;
     font-size: 2rem;
     width: 50%;
     border-bottom: 3px double mediumseagreen;
+    font-style: italic;
 }
 
 .news-art p {
     padding: 10px;
     font-size: 1.2rem;
     margin: 20px 5px 35px 0;
-    font-style: italic;
+    /* font-style: italic; */
+    font-family: sans-serif;
     line-height: 30px;
+}
+
+.news-art p:before {
+    content: "“";
+    font-size: 3rem;
 }
 
 
@@ -208,7 +253,7 @@ h1, h2 {
     padding: 7px;
     color: black;
     border-left: 17px groove red;
-    border-style: dotted;
+    /* border-style: dotted; */
     font-size: .8rem;
     font-family: sans-serif;
 }
@@ -286,6 +331,16 @@ h1, h2 {
     font-size: 1.1rem;
     text-indent: 40px;
     font-family: sans-serif;
+}
+
+.blog-order {
+    padding: 5px;
+}
+
+.blog-order:hover {
+    background-color: #a8b6ff;
+    cursor: pointer;
+        
 }
 
 /* terms and Privacy */

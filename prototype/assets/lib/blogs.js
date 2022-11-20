@@ -95,8 +95,27 @@ export const blogPosts = [
                 par: "Hello Americans, The News Section is Now Availible"
             },
             {
-                par: "My name is Elizebith and I will be reposting you the lasted news about our trust, our doner, and our leader. Please have a look and educate yourself. Your individual interpretation is very important to us."
+                par: "My name is Elizebith and I will be reposting you the lasted news about our trust, our doners, and our leader. Please have a look and educate yourself. Your individual interpretation is very important to us."
             },
+            
+        ]
+    },
+    {
+        postId: 6,
+        postTitle: "Barre blessed me today",
+        postDate: "November 15th, 2022",
+        postAuth: "Jamie",
+        postImg: "https://i.pinimg.com/originals/25/e6/51/25e651ed0ed6f07305f9469aaffdb612.jpg",
+        postBody: [
+            {
+                par: "Today I would like to share with you the blessing that I recieved from our brave doner, Barre Sied. I really can't even believe this happned. I didn't think he knew who I was, or would even care! It was 2:39AM, and I recieve a text on my phone from a random number. It said 'Jamie, do you know who this is? I'll give you a hint, it rhymes with Tar Lied'. I instantly knew who it was, although I guess I was extremly wrong on how to pronouce his name. (he loves lying to tar which is why I could associate so freely)"
+            },
+            {
+                par: "I send back a very loving and tender text, which I can tell he enjoyed becuase we exchanged a few more sweet nothings in this dead of night. He finally got to the point though. 'Jamie, you are my special little boy. I believe in you deeply, and I want you to continue to spread my word as seed.' I got a bit horny at the thought of seed, but I recollected myself and responded back 'of course sir, you are my everything'. I then recieved a voice message from him. 'Hmph. Good. Then gaze upon this and recognize what could be yours'."
+            },
+            {
+                par: " Ooooooooo the next part is so juicy that I really should not share, but I must. I recieved a picture shortly there after. A full frame affair, I was gazing upon his magical forest of snow white chest hair. Dense and impregnible, but at the same time inviting you in. It looked so warm, even through the screen. I stared deeply into my phone screen, forgetting about the world outisde its bounds. I must have been staring for a while, because my wife woke up next to me and said 'honey, please go to sleep, that phone screen is so bright'. I said shut up you cunt have you no idea of the power I have just witnessed?!. I feel a bit derranged, but honestly she deserved it. No respect. Anyways, it's 5:04AM right now as I type, still high off this delight. I need to... I need to.. think about this a bit longer. We'll speak soon. "
+            }
             
         ]
     },
