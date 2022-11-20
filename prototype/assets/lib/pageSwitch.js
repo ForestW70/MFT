@@ -2,6 +2,7 @@ import { blogPosts } from "./blogs.js";
 import { expTerms } from "./showTerms.js";
 import { flexCons } from "./constructionGifs.js";
 import { createPlayer } from "./showPlayer.js";
+import { newsArticles } from "./news.js";
 
 // view swaps
 
@@ -48,12 +49,44 @@ export const showAbout = () => {
 
 export const showNews = () => {
     const propaFrag = document.createDocumentFragment();
-    const consImg = document.createElement("img");
-    consImg.classList.add("under-con");
-    consImg.src = "https://thumbs.gfycat.com/AdolescentDizzyHare-size_restricted.gif";
+    // const consImg = document.createElement("img");
+    // consImg.classList.add("under-con");
+    // consImg.src = "https://thumbs.gfycat.com/AdolescentDizzyHare-size_restricted.gif";
 
-    propaFrag.appendChild(consImg);
-    propaFrag.appendChild(consText);
+    newsArticles.map(e => {
+        const newsCont = document.createElement("article");
+        const newsTit = document.createElement("h3");
+        const newsAbs = document.createElement("p");
+        const newsAuth = document.createElement("a");
+        const newsProp = document.createElement("span");
+    
+        newsCont.classList.add("news-art");
+    
+        newsTit.innerText = e.title;
+        newsAbs.innerText = e.body;
+        newsAuth.innerText = `${e.source}, ${e.author}, ${e.date}`;
+        newsProp.innerText = `shared by: ${e.poster}`;
+
+        newsAuth.href = e.link;
+        newsAuth.target = "blank";
+
+        
+    
+        newsCont.appendChild(newsTit);
+        newsCont.appendChild(newsAbs);
+        newsCont.appendChild(newsAuth);
+        newsCont.appendChild(newsProp);
+
+        propaFrag.appendChild(newsCont);
+    })
+
+    
+    // const splayNews = () => {
+
+
+    // }
+    // propaFrag.appendChild(consImg);
+    // propaFrag.appendChild(newsCont);
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);

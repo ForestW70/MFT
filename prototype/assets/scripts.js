@@ -63,7 +63,7 @@ import { showHome, showAbout, showNews, showVideos, showBlog, showContact, showP
                     showPriv();
                     break;
                 default:
-                    showHome();
+                    showNews();
                     break;
             }
         });
