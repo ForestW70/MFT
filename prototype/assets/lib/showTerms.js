@@ -1120,7 +1120,7 @@ privP.innerHTML = `
         
 `
 
-export const expTerms = () => {
+export const flexTerms = () => {
     const newCont = document.createDocumentFragment();
     newCont.appendChild(preamble);
     newCont.appendChild(termsP);

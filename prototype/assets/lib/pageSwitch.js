@@ -1,5 +1,5 @@
 import { blogPosts } from "./blogs.js";
-import { expTerms } from "./showTerms.js";
+import { flexTerms } from "./showTerms.js";
 import { flexCons } from "./constructionGifs.js";
 import { createPlayer } from "./showPlayer.js";
 import { newsArticles } from "./news.js";
@@ -34,7 +34,7 @@ export const showAbout = () => {
 
     const consText = document.createElement("span");
     consText.innerText = "Page Under Construction! Come back soon ♥";
-    consText.classList.add("under-cons");
+    consText.classList.add("cons-blurb");
 
     propaFrag.appendChild(consImg);
     propaFrag.appendChild(consText);
@@ -155,6 +155,7 @@ export const showBlog = () => {
     splayBlogs();
 }
 
+// fuck around view
 export const showContact = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = flexCons();
@@ -164,13 +165,12 @@ export const showContact = () => {
     propaView.appendChild(propaFrag);
 }
 
+// terms and privacy view
 export const showPriv = () => {
-    // const propaFrag = document.createDocumentFragment();
-
     const pageTitle = document.createElement("p");
     pageTitle.innerText = "Terms, Conditions, and Privacy"
 
-    const newFill = expTerms();
+    const newFill = flexTerms();
 
     propaView.innerText = "";
     propaView.appendChild(pageTitle);
