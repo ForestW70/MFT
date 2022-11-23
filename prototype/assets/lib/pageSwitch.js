@@ -8,10 +8,7 @@ import { newsArticles } from "./news.js";
 
 const propaView = document.getElementById("propa");
 
-const consText = document.createElement("span");
-consText.innerText = "Page Under Construction! Come back soon ♥";
-consText.classList.add("under-cons");
-
+// Home View
 export const showHome = () => {
     const propaFrag = document.createDocumentFragment();
     const banDiv = document.createElement("div");
@@ -19,14 +16,8 @@ export const showHome = () => {
     const consImg = document.createElement("img");
 
     banDiv.classList.add("yealol");
-    // panicBtn.classList.add("panic-btn");
-    // panicBtn.classList.add("bait");
-
     consImg.src = "https://i.gifer.com/51L3.gif";
-
-    panicBtn.innerText = "AHHHHHHHHHHH!";
-
-    // banDiv.appendChild(panicBtn);
+    
     banDiv.appendChild(consImg);
     propaFrag.appendChild(banDiv);
 
@@ -34,11 +25,16 @@ export const showHome = () => {
     propaView.appendChild(propaFrag);
 }
 
+// About page view *empty*
 export const showAbout = () => {
     const propaFrag = document.createDocumentFragment();
     const consImg = document.createElement("img");
     consImg.classList.add("under-con");
     consImg.src = "https://c.tenor.com/X6i3RTlXpmAAAAAM/under-construction-men-at-work.gif";
+
+    const consText = document.createElement("span");
+    consText.innerText = "Page Under Construction! Come back soon ♥";
+    consText.classList.add("under-cons");
 
     propaFrag.appendChild(consImg);
     propaFrag.appendChild(consText);
@@ -47,17 +43,11 @@ export const showAbout = () => {
     propaView.appendChild(propaFrag);
 }
 
+// News Articles view
 export const showNews = () => {
     const propaFrag = document.createDocumentFragment();
-    // const consImg = document.createElement("img");
-    // consImg.classList.add("under-con");
-    // consImg.src = "https://thumbs.gfycat.com/AdolescentDizzyHare-size_restricted.gif";
-    const newArt = document.createElement("img");
-    const newArt1 = document.createElement("img");
-    const newArt2 = document.createElement("img");
-
-    // newArt.src = "./imgs/new.gif"
-
+    
+    // render news obj
     newsArticles.map(e => {
         const newsCont = document.createElement("article");
         const newsTit = document.createElement("h3");
@@ -75,82 +65,59 @@ export const showNews = () => {
         newsAuth.href = e.link;
         newsAuth.target = "blank";
 
-
-
         newsCont.appendChild(newsTit);
         newsCont.appendChild(newsAbs);
         newsCont.appendChild(newsAuth);
         newsCont.appendChild(newsProp);
 
-        const randVar = Math.random();
-
-        if (randVar >= .5) {
+        if (Math.random() >= .5) {
             propaFrag.appendChild(newsCont);
         } else {
-            propaFrag.insertBefore(newsCont, propaFrag.firstChild)
+            propaFrag.insertBefore(newsCont, propaFrag.firstChild);
         }
 
-    })
-
-
-    // const splayNews = () => {
-
-
-    // }
-    // propaFrag.appendChild(consImg);
-    // propaFrag.appendChild(newsCont);
+    });
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);
 }
 
+// Redacter view
 export const showVideos = () => {
     const propaFrag = document.createDocumentFragment();
-    // const consImg = document.createElement("img");
-    // consImg.classList.add("under-con");
-    // consImg.src = "https://i.pinimg.com/originals/eb/1b/27/eb1b27863813653543914d222ceb9cd0.gif";
-
-    // propaFrag.appendChild(consImg);
-    // propaFrag.appendChild(consText);
-
     propaFrag.appendChild(createPlayer());
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);
 }
 
+// blog post view
 export const showBlog = () => {
     const propaFrag = document.createDocumentFragment();
-    // const consImg = document.createElement("img");
-    // consImg.classList.add("under-con");
-    // consImg.src = "https://64.media.tumblr.com/f0da7c50d726e64c6c0d8a985240b6f4/dfbbb68a95adf2d4-ce/s250x400/afe73dd5883647200c53408018ed3be99b567b80.gif";
-
-    // propaFrag.appendChild(consImg);
-    // propaFrag.appendChild(consText);
-    let viewVar = 1;
     const viewOrder = document.createElement("p");
     viewOrder.classList.add("blog-order");
-    viewOrder.innerText = "Showing newest first"
+    viewOrder.innerText = "Showing newest first";
     
-
+    // change view order
+    let viewVar = 1;
     viewOrder.addEventListener("click", () => {
         if (viewVar === 1) {
             viewVar = 0;
             viewOrder.innerText = "Showing oldest first";
-            // propaView.innerText = "";
-            // splayBlogs();
-            // propaView.appendChild(blogs);
+           
         } else {
             viewVar = 1;
             viewOrder.innerText = "Showing newest first";
+
         }
+
         propaView.innerText = "";
         splayBlogs();
 
     })
-    
 
-    // meat
+
+    // render blog obj
     const splayBlogs = () => {
         blogPosts.map(e => {
             const pTitle = document.createElement("h3");
@@ -174,34 +141,23 @@ export const showBlog = () => {
                 pCont.appendChild(newParagraph);
 
             });
+
+            // change render dir based on var
+            viewVar === 1 ? propaFrag.insertBefore(pCont, propaFrag.firstChild) : propaFrag.appendChild(pCont);
             
+        });
 
-            if (viewVar == 1) {
-                propaFrag.insertBefore(pCont, propaFrag.firstChild);
-                
-            } else {
-                propaFrag.appendChild(pCont);
-                
-            }
-
-        })
         propaView.appendChild(viewOrder);
         propaView.appendChild(propaFrag)
     }
+
     propaView.innerText = "";
     splayBlogs();
-
-
-
 }
 
 export const showContact = () => {
     const propaFrag = document.createDocumentFragment();
-
-
-
     const consImg = flexCons();
-    // propaFrag.appendChild(consText);
     propaFrag.appendChild(consImg);
 
     propaView.innerText = "";
@@ -209,17 +165,12 @@ export const showContact = () => {
 }
 
 export const showPriv = () => {
-    const propaFrag = document.createDocumentFragment();
-    const consImg = document.createElement("img");
-    consImg.classList.add("under-con");
-    consImg.src = "https://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif";
+    // const propaFrag = document.createDocumentFragment();
 
     const pageTitle = document.createElement("p");
     pageTitle.innerText = "Terms, Conditions, and Privacy"
 
     const newFill = expTerms();
-    // propaFrag.appendChild(consImg);
-    // propaFrag.appendChild(consText);
 
     propaView.innerText = "";
     propaView.appendChild(pageTitle);

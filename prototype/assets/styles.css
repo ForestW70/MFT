@@ -165,7 +165,7 @@ h1, h2 {
 /* Home Body */
 .yealol {
     background-size: cover;
-    background-image: url(./imgs/madman.png);
+    background-image: url(./imgs/TippingPt.png);
     background-position: 50%;
     background-repeat: no-repeat;
     min-width: 100%;
@@ -357,12 +357,17 @@ h1, h2 {
     font-weight: 600;
     font-style: italic;
     font-size: 1rem;   
-    font-family: monospace; 
+    font-family: cursive; 
 }
 
-section p p {
+.terms-cond {
     text-align: justify;
-    font-family: cursive;
+    font-family: monospace;
+}
+
+.priv-pol {
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
