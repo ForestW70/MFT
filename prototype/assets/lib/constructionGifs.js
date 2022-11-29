@@ -18,6 +18,8 @@ export const flexCons = () => {
     const allGifs = document.createDocumentFragment();
     const conCont = document.createElement("section");
     conCont.classList.add("con-grid");
+
+    // gifs surrounding a questionable question in grid
     conGifs.forEach((e, i) => {
         if (i === 4) {
             const contract4U = document.createElement("div");
@@ -28,9 +30,7 @@ export const flexCons = () => {
             contract4U.classList.add("binding-contract");
             inq.innerText = "Would you like to enter a binding contract with us?";
             yes.innerText = "YES";
-            // yes.id = "proceed";
             no.innerText = "NO";
-            // no.id = "coward";
 
             yes.addEventListener("click", () => {
                 window.alert("Good, please see this page for more information about how you can further intwine with our values.")
@@ -54,8 +54,7 @@ export const flexCons = () => {
             conCont.appendChild(img);
             allGifs.appendChild(conCont);
         }
-
-        // allGifs.appendChild(conCont);
-    })
+    });
+    
     return allGifs;
 }
