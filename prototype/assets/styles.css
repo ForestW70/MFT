@@ -6,9 +6,10 @@ body {
 
 #propa {
     display: flex;
-    background-color: white;
     align-items: center;
     flex-direction: column;
+    background-image: url(./imgs/samp.png);
+    /* background-color: #ffffff52; */
 }
 
 .hide {
@@ -224,32 +225,40 @@ audio::-webkit-media-controls-timeline {
     border-radius: 50px;
     border-bottom-left-radius: 0px;
     background-color: #6bef50;
+    width: 75%;
+    margin-right: auto;
+    margin-left: 20px;
+    border-bottom: outset;
 }
 
 .news-art:first-child {
     border: 3px solid black;
-    border-style: dashed;
+    /* border-style: dashed; */
+    width:90%;
+
 }
 
 .news-art:first-child::before {
-    /* content: url(./assets/new.gif); */
+    content: url(./imgs/new321.gif);
+    /* content: url(./imgs/newt.gif); */
+    
 }
 
 .news-art h3 {
     margin: 0;
-    font-size: 2rem;
-    width: 50%;
+    font-size: 1.5rem;
+    width: 100%;
     border-bottom: 3px double mediumseagreen;
     font-style: italic;
 }
 
 .news-art p {
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 20px 5px 35px 0;
     /* font-style: italic; */
     font-family: sans-serif;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .news-art p:before {
@@ -271,13 +280,18 @@ audio::-webkit-media-controls-timeline {
     cursor: pointer;
 }
 
+.its-you {
+    background-color: blue;
+}
+
 /*  */
 /* Blog posts */
 .blog-post {
-    margin: 30px 200px;
+    margin: 15px 20px;
     padding: 0 15px;
     border-top: 15px solid cornflowerblue;;
     border-style: double;
+    background-color: floralwhite;
 }
 
 .blog-post h3 {
@@ -319,9 +333,9 @@ audio::-webkit-media-controls-timeline {
 /*  */
 /* contract View*/
 .con-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
     
 }
 
@@ -348,6 +362,7 @@ audio::-webkit-media-controls-timeline {
 
 .allum {
     display: inline;
+    height: 70%;
 }
 
 /*  */
@@ -398,6 +413,22 @@ audio::-webkit-media-controls-timeline {
     .views span {
         font-size: .8rem;
     }
+    .news-art h3 {
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    .news-art p {
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .blog-post {
+        margin: 30px 200px;
+    }
+    .con-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -425,12 +456,16 @@ audio::-webkit-media-controls-timeline {
     .views span {
         font-size: 1rem;
     }
+    .con-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1337px) {
     .social span{
         display: inline;
     }
+    
 }
 
 @media screen and (min-width: 1500px) {

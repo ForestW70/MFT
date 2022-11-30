@@ -119,5 +119,27 @@ export const blogPosts = [
             
         ]
     },
+    {
+        postId: 7,
+        postTitle: "Hey guys",
+        postDate: "November 29th, 2022",
+        postAuth: "Admin",
+        postImg: "https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTgxNDczNjkxNDQ0MzQ5/toe-cramps-jpg.jpg",
+        postBody: [
+            {
+                par: "Hey guys, its me. The admin."
+            },
+            {
+                par: "Just wanted to let you know that I'm gunna need to pull that last blog post from Jamie. I think it gave him the wrong idea of how these blogs were meant to turn out. He's been sending me some realy errotic stuff recenetly, and I finally had to have a talk with him."
+            },
+            {
+                par: "I think we're both in aggreance now though that we need to focus on the true agenda, and do whatever it takes for them to think of more dumb carp I can develop for them in this website! Lets keep this retainer fund flowing Yea!"
+            },
+            {
+                par: "oh PS I recently stubbed my toe and it really hurt but i am recovering slowly. really blew the shit out of it ow. needless to say I'm going to need to take some sick days for a while, so Jamie, I will be AWAY for a bit, so if you NEED me, you can email at ADMIN at BURNTHIS dot SPACE. ok?"
+            }
+            
+        ]
+    },
 ]
 
