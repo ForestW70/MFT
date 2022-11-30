@@ -46,7 +46,7 @@ export const showAbout = () => {
 // News Articles view
 export const showNews = () => {
     const propaFrag = document.createDocumentFragment();
-    
+    let plsStopCnt = 0;
     // render news obj
     newsArticles.map(e => {
         const newsCont = document.createElement("article");
@@ -72,6 +72,16 @@ export const showNews = () => {
 
         if (Math.random() >= .5) {
             propaFrag.appendChild(newsCont);
+
+            // plsStopCnt++;
+            // if (plsStopCnt === 10) {
+            //     const noNewsCont = document.createElement("article");
+            //     const blueText = document.createElement("p");
+            //     blueText.innerText = "please stop texting me";
+            //     blueText.classList.add("news-art", "its-you");
+            //     noNewsCont.appendChild(blueText);
+            //     propaFrag.appendChild(noNewsCont);
+            // } 
         } else {
             propaFrag.insertBefore(newsCont, propaFrag.firstChild);
         }

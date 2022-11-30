@@ -1,4 +1,5 @@
 export const conGifs = [
+    // God bless you http://textfiles.com/underconstruction/
     "https://i.pinimg.com/originals/eb/1b/27/eb1b27863813653543914d222ceb9cd0.gif",
     "https://64.media.tumblr.com/f0da7c50d726e64c6c0d8a985240b6f4/dfbbb68a95adf2d4-ce/s250x400/afe73dd5883647200c53408018ed3be99b567b80.gif",
     "https://media0.giphy.com/media/QZIcGPmYMclva/giphy.gif?cid=790b7611fa2c4398428e3ad0b848e97a0bd2c1390b07a17b&rid=giphy.gif&ct=g",
@@ -11,7 +12,27 @@ export const conGifs = [
     "https://thumbs.gfycat.com/AdolescentDizzyHare-size_restricted.gif",
     "https://i.gifer.com/51L3.gif",
     "https://media0.giphy.com/media/ZTans30ONaaIM/giphy.gif",
-    "https://www.fg-a.com/under-construction/2017-under-construction.jpg"
+    "https://www.fg-a.com/under-construction/2017-under-construction.jpg",
+    "http://textfiles.com/underconstruction/CaCapitolHillCongress3062CONSTRUCTION1.GIF",
+    "http://textfiles.com/underconstruction/HeHeartlandGarden5828constructionuc3.gif",
+    "http://textfiles.com/underconstruction/MaMadisonAvenue6282imagesconstruction.gif",
+    "http://textfiles.com/underconstruction/PaParisBistro7538Pikachu_construction.gif",
+    "http://textfiles.com/underconstruction/CaCapeCanaveral8167brunounderconstruction.gif",
+    "http://textfiles.com/underconstruction/ArArea51Quasar4180underconstruction.gif",
+    "http://textfiles.com/underconstruction/Heartland7870construction_major.gif",
+    "http://textfiles.com/underconstruction/CoColosseumDugout6041imagesconstruction.gif",
+    "http://textfiles.com/underconstruction/HeHeartlandGarden5828constructionfly.gif",
+    "http://textfiles.com/underconstruction/HeHeartlandRanch4242Imagesunderconstructionbelly.gif",
+    "http://textfiles.com/underconstruction/HoHotSprings4674hazunderconstruct.gif",
+    "http://textfiles.com/underconstruction/thefirepoliceconstruction10.gif",
+    "http://textfiles.com/underconstruction/HoHollywoodBoulevard7726underconstructionbildersida1uc3.gif",
+    "http://textfiles.com/underconstruction/Lair7805construct.gif",
+    "http://textfiles.com/underconstruction/CaCapeCanaveralGalaxy8999construction1.gif",
+    "http://textfiles.com/underconstruction/ReResearchTriangleNode8151imagesconstruction1.gif",
+    "http://textfiles.com/underconstruction/HeHeartlandPointe8782Construction.gif",
+    "http://textfiles.com/underconstruction/AtAthensDelphi2923construction.gif",
+    "http://textfiles.com/underconstruction/ArArea51Shuttle1525underconstruct.gif",
+    "http://textfiles.com/underconstruction/pentagonbarracks1178imagesunder-construction.gif",
 ]
 
 export const flexCons = () => {
@@ -51,8 +72,16 @@ export const flexCons = () => {
             const img = document.createElement("img");
             img.classList.add("allum")
             img.src = e;
-            conCont.appendChild(img);
-            allGifs.appendChild(conCont);
+            // conCont.appendChild(img);
+            if (Math.random() >= .5) {
+                console.log("wee")
+                conCont.insertBefore(img, conCont.firstChild);
+                allGifs.appendChild(conCont);
+            } else {
+                console.log("woo")
+                conCont.appendChild(img);
+                allGifs.appendChild(conCont);
+            }
         }
     });
     
