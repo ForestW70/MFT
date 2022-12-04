@@ -3,20 +3,23 @@ import { redacter } from "./redacter.js";
 export const createPlayer = () => {
     const payload = document.createDocumentFragment();
     const title = document.createElement("h2");
-    const aImg = document.createElement("img");
+    const cover = document.createElement("img");
     const artist = document.createElement("h3");
     const metaTags = document.createElement("span");
 
-    artist.classList.add("big-man-up-top");
-    aImg.src = redacter.albumArt;
-    aImg.classList.add("lmr-art");
-    metaTags.classList.add("meta-data");
     title.innerText = redacter.albumTitle;
+
+    cover.src = redacter.albumArt;
+    cover.classList.add("lmr-art");
+
+    artist.classList.add("big-man-up-top");
     artist.innerText = redacter.albumArtist;
+
+    metaTags.classList.add("meta-data");
     metaTags.innerText = `${redacter.trackTotal} tracks, ${redacter.timeTotal} long, ${redacter.rLabel}`;
 
     payload.appendChild(title);
-    payload.appendChild(aImg);
+    payload.appendChild(cover);
     payload.appendChild(artist);
     payload.appendChild(metaTags);
 
@@ -29,6 +32,7 @@ export const createPlayer = () => {
         songRow.classList.add("song-row");
         songRow.id = e.src || "";
         songRow.dataset.sel = 0;
+        
         tInd.innerText = i++;
         tTit.innerText = e.titleFull;
         tLen.innerText = e.tracklength;

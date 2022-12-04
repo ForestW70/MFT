@@ -3,10 +3,12 @@ const termsP = document.createElement("p");
 const privP = document.createElement("p");
 
 preamble.classList.add("preamble");
+termsP.classList.add("terms-cond");
+privP.classList.add("priv-pol")
 
 
 preamble.innerHTML = `
-<p>
+
     Hey, Jamie here again! So our developer refused to workshop and write out our Terms agreement & privacy statement... 
     I'll have to speak with our CFO about a possible additonal stiphon to help incentivise him to work harder, but in the meantime, 
     I found that one of our favorite sites over at The Trust, Nuwber, had their Terms and Privacy use almost the exact verbage that we would use,
@@ -16,11 +18,11 @@ preamble.innerHTML = `
     3) We do not have a Phone number or contact email (yet!), but feel free to voice all questions comments and concers too the phone and email provided below.
     4) Here's the big one. NO SUING! Not like you can make us disclose our ties and identity anyways, so good luck trying!
     With that out of the way, please read our conditions below. They're mad good!
-<p>
+
 `
 
 termsP.innerHTML = `
-<p>Nuwber Terms of Use and Terms & Conditions of Sale
+Nuwber Terms of Use and Terms & Conditions of Sale
             PLEASE READ THESE TERMS OF USE AND TERMS AND CONDITIONS OF SALE CAREFULLY BEFORE ACCESSING, USING, OR MAKING
             ANY PURCHASE OF SERVICES OR PRODUCTS OVER WWW.NUWBER.COM (THE “WEBSITE”). BY ACCESSING, USING, OR MAKING ANY
             PURCHASE OF SERVICES OR PRODUCTS OVER THE WEBSITE, YOU ACCEPT AND AGREE TO THESE TERMS OF USE AND TERMS AND
@@ -718,11 +720,11 @@ termsP.innerHTML = `
             26. CONTACT INFORMATION
             Questions about the Terms should be sent to support@nuwber.com.
 
-            Date of Last Revision: April 21, 2021</p>
+            Date of Last Revision: April 21, 2021
 `
 
 privP.innerHTML = `
-<p>
+
             Nuwber Privacy Policy
             This Privacy Policy applies across nuwber.com and all subdomains, the website that we own and operate, and
             all services we provide, including our online and mobile services and products. For the purpose of this
@@ -1114,11 +1116,11 @@ privP.innerHTML = `
             19. Privacy Related Inquiries
             If, for any reason, you are concerned with the way that we may be using your Personal Data or you have
             questions about the privacy aspects of the Website or the Services, please, contact us at
-            support@nuwber.com.
-        </p>
+            admin@burnthis.space.
+        
 `
 
-export const expTerms = () => {
+export const flexTerms = () => {
     const newCont = document.createDocumentFragment();
     newCont.appendChild(preamble);
     newCont.appendChild(termsP);
