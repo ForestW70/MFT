@@ -330,6 +330,20 @@ audio::-webkit-media-controls-timeline {
         
 }
 
+.hide-blog {
+    height: 100vw;
+    width: 100vw;
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.hide-blog img {
+    height: 50%;
+    width: 50%;
+}
+
 /*  */
 /* contract View*/
 .con-grid {

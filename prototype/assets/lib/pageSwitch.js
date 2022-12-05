@@ -153,10 +153,20 @@ export const showBlog = () => {
             });
 
             // change render dir based on var
-            viewVar === 1 ? propaFrag.insertBefore(pCont, propaFrag.firstChild) : propaFrag.appendChild(pCont);
+            viewVar === 0 ? propaFrag.insertBefore(pCont, propaFrag.firstChild) : propaFrag.appendChild(pCont);
             
         });
+        const hider = document.createElement("div");
+        hider.classList.add("hide-blog");
+        const myConstruc = document.createElement("img");
+        myConstruc.src = "https://thumbs.gfycat.com/SleepySadAegeancat-max-1mb.gif";
+        const consMessage = document.createElement("p");
+        consMessage.innerText = "We'll be right back! -♥Admin";
+        
+        hider.appendChild(myConstruc);
+        hider.appendChild(consMessage);
 
+        propaView.appendChild(hider);
         propaView.appendChild(viewOrder);
         propaView.appendChild(propaFrag)
     }
