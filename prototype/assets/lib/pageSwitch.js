@@ -141,6 +141,7 @@ export const showBlog = () => {
             pBody.innerText = e.postBody;
 
             const pCont = document.createElement("article");
+            pCont.classList.add("hide"); //
             pCont.classList.add("blog-post");
             pCont.appendChild(pTitle);
             pCont.appendChild(pAuth);

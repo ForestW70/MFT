@@ -32,19 +32,24 @@ export const createPlayer = () => {
         songRow.classList.add("song-row");
         songRow.id = e.src || "";
         songRow.dataset.sel = 0;
+        songRow.dataset.fullT = e.titleFull;
         
         tInd.innerText = i++;
-        tTit.innerText = e.titleFull;
+        tTit.innerText = e.titleAbr;
         tLen.innerText = e.tracklength;
 
         // song click
         songRow.addEventListener("click", (e) => {
             const player = document.getElementById("player");
+            const onNow = document.getElementById("catcher");
             
             if (e.currentTarget.dataset.sel == 0){
                 player.classList.remove("hide");
+                onNow.classList.remove("hide");
                 e.currentTarget.dataset.sel == 1;
                 e.currentTarget.classList.add("selected-track");
+                onNow.innerText = "";
+                onNow.innerText = `"${e.currentTarget.dataset.fullT}"`;
             } else {
                 e.currentTarget.dataset.sel == 0;
                 e.currentTarget.classList.remove("selected-track");

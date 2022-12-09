@@ -12,9 +12,7 @@ body {
     /* background-color: #ffffff52; */
 }
 
-.hide {
-    display: none;
-}
+
 
 /*  */
 /* Header */
@@ -27,7 +25,7 @@ body {
 }
 
 .hboy {
-    background-color: white;
+    background-color: honeydew;
     padding: 0px 15px 5px 5px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -108,7 +106,7 @@ h1, h2 {
     align-items: center;
 }
 
-.connectme p {
+.come-on {
     display: block;
     font-family: sans-serif;
     font-weight: 800;
@@ -179,9 +177,22 @@ audio::-webkit-media-controls-timeline {
     border-radius: 100px;
 }
 
+#catcher {
+    width: 50vw;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px 40px;
+    font-style: italic;
+    font-family: serif;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    margin: 0;
+}
+
 .lmr-art {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    /* width: 200px; */
 }
 
 .big-man-up-top {
@@ -199,6 +210,7 @@ audio::-webkit-media-controls-timeline {
 
 .song-row {
     padding: 10px;
+    margin-top: 5px;
     cursor: progress;
 }
 
@@ -399,6 +411,11 @@ audio::-webkit-media-controls-timeline {
 .priv-pol {
     text-align: justify;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.hide {
+    display: none;
 }
 
 
