@@ -164,6 +164,31 @@ h1, h2 {
     text-align: center;
 }
 
+.ab-head {
+    border-bottom: 2px solid black;
+}
+
+.ab-pp {
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    width: 85vw;
+    border-radius: 3px;
+    box-shadow: 0 0 15px black;
+
+}
+
+.ab-rest {
+    background-color: azure;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    justify-content: left;
+    /* min-width: 30vw; */
+    min-width: 65vw;
+}
+
 /*  */
 /* player/videos/redacter view */
 #player {
@@ -459,6 +484,9 @@ audio::-webkit-media-controls-timeline {
     }
     .con-grid {
         grid-template-columns: 1fr 1fr;
+    }
+    .ab-rest {
+        min-width: 30vw;
     }
 }
 

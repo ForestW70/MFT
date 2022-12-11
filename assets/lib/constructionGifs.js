@@ -74,11 +74,11 @@ export const flexCons = () => {
             img.src = e;
             // conCont.appendChild(img);
             if (Math.random() >= .5) {
-                console.log("wee")
+                
                 conCont.insertBefore(img, conCont.firstChild);
                 allGifs.appendChild(conCont);
             } else {
-                console.log("woo")
+                
                 conCont.appendChild(img);
                 allGifs.appendChild(conCont);
             }
