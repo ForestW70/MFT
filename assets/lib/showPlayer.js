@@ -9,7 +9,7 @@ export const createPlayer = () => {
 
     title.innerText = redacter.albumTitle;
 
-    cover.src = redacter.albumArt;
+    cover.src = redacter.albumThumb;
     cover.classList.add("lmr-art");
 
     artist.classList.add("big-man-up-top");

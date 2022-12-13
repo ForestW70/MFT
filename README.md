@@ -1,8 +1,8 @@
-Marble Freedom Trust
+# Marble Freedom Trust
 
-Commissioned by IJA Burner Trust and constituents.
+## Commissioned by IJA Burner Trust and constituents.
 
-"Don't hate the player, hate the game. Or the Judge."
+### ~ track 6 & 8 too long ~
 
-(itsjustaburner)
-admin@burnthis.space
+#### (itsjustaburner)
+##### admin@burnthis.space

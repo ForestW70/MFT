@@ -1,7 +1,8 @@
 export const redacter = {
     albumTitle: "Redacter",
     albumArtist: "L. Mauro",
-    albumArt: "https://forestw70.github.io/sketches-bcc-client/assets/images/unredacted.png",
+    albumArt: "https://marblefreedomtrust.us/assets/imgs/redacter.png",
+    albumThumb: "https://marblefreedomtrust.us/assets/imgs/thumbredacter.png",
     rLabel: "Burner Records",
     releaseDate: "November 8th 2022",
     trackTotal: 9,
