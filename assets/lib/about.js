@@ -83,6 +83,11 @@ export const aboutInfo = [
         type: "span",
         body: [
             {
+                loc: "0",
+                item: "Original Article by InfluenceWatch.org",
+                src: "https://www.influencewatch.org/non-profit/marble-freedom-trust/",
+            },
+            {
                 loc: "1",
                 item: "Federalist Society",
                 src: "https://www.influencewatch.org/non-profit/federalist-society-for-law-and-public-policy-studies/",

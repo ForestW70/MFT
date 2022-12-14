@@ -100,6 +100,7 @@ export const showNews = () => {
         newsTit.innerText = e.title;
         newsAbs.innerText = e.body;
         newsAuth.innerText = `${e.source}, ${e.author}, ${e.date}`;
+        newsAuth.classList.add("go-2-story")
         newsProp.innerText = `shared by: ${e.poster}`;
 
         newsAuth.href = e.link;

@@ -1,5 +1,20 @@
 import { redacter } from "./redacter.js";
 
+const popOut = (bigPic) => {
+    const popper = document.createDocumentFragment();
+    const backdrop = document.createElement("div");
+    backdrop.classList.add("backdrop");
+    const bigRedact = document.createElement("img");
+    bigRedact.src = bigPic;
+    bigRedact.id = "focus";
+
+    console.log("poppa");
+    backdrop.appendChild(bigRedact);
+    popper.appendChild(backdrop);
+    document.getElementById("propa").appendChild(popper);
+
+}
+
 export const createPlayer = () => {
     const payload = document.createDocumentFragment();
     const title = document.createElement("h2");
@@ -11,6 +26,34 @@ export const createPlayer = () => {
 
     cover.src = redacter.albumThumb;
     cover.classList.add("lmr-art");
+
+    cover.addEventListener("click", () => {
+        const backdrop = document.getElementById("popOut");
+
+        const popper = document.createDocumentFragment();
+        backdrop.classList.add("backdrop");
+        backdrop.style.zIndex = "1000";
+        backdrop.addEventListener("click", (e) => {
+            if (e.target.id === "focus") {
+                console.log("look harder!")
+            } else {
+                backdrop.innerHTML = "";
+                backdrop.style.zIndex = "-1";
+                backdrop.classList.remove("backdrop")
+
+            }
+        })
+
+
+        const bigRedact = document.createElement("img");
+        bigRedact.src = redacter.albumArt;
+        bigRedact.id = "focus";
+
+        console.log("poppa");
+        popper.appendChild(bigRedact);
+        backdrop.appendChild(popper);
+        document.getElementById("propa").appendChild(popper);
+    })
 
     artist.classList.add("big-man-up-top");
     artist.innerText = redacter.albumArtist;
@@ -33,7 +76,7 @@ export const createPlayer = () => {
         songRow.id = e.src || "";
         songRow.dataset.sel = 0;
         songRow.dataset.fullT = e.titleFull;
-        
+
         tInd.innerText = i++;
         tTit.innerText = e.titleAbr;
         tLen.innerText = e.tracklength;
@@ -42,8 +85,8 @@ export const createPlayer = () => {
         songRow.addEventListener("click", (e) => {
             const player = document.getElementById("player");
             const onNow = document.getElementById("catcher");
-            
-            if (e.currentTarget.dataset.sel == 0){
+
+            if (e.currentTarget.dataset.sel == 0) {
                 player.classList.remove("hide");
                 onNow.classList.remove("hide");
                 e.currentTarget.dataset.sel == 1;

@@ -9,6 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-image: url(./imgs/samp.png);
+    z-index: 0;
     /* background-color: #ffffff52; */
 }
 
@@ -217,6 +218,7 @@ audio::-webkit-media-controls-timeline {
 
 .lmr-art {
     height: 400px;
+    cursor: help;
     /* width: 200px; */
 }
 
@@ -251,6 +253,30 @@ audio::-webkit-media-controls-timeline {
 .song-row span {
     padding: 3px 10px;
     font-family: sans-serif;
+}
+
+#popOut {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: -1;
+}
+
+.backdrop {
+    /* z-index: 10; */
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: #94011c80;
+    display: flex;
+}
+
+#focus {
+    margin: auto;
+    height: 35vh;
+    filter: drop-shadow(2px 40px 40px black);
 }
 
 /*  */
@@ -303,6 +329,14 @@ audio::-webkit-media-controls-timeline {
     font-size: 3rem;
 }
 
+.news-art a {
+    background-color: white;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
 
 .news-art span, .news-art a {
     padding: 7px;
@@ -313,7 +347,7 @@ audio::-webkit-media-controls-timeline {
 }
 
 .news-art span:hover, .news-art a:hover {
-    background-color: white;
+    background-color: rgb(255, 237, 237);
     cursor: pointer;
 }
 
@@ -457,6 +491,9 @@ audio::-webkit-media-controls-timeline {
     .hero-bar {
         height: 70px;
     }
+    #focus {
+        height: 45vh;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -488,6 +525,9 @@ audio::-webkit-media-controls-timeline {
     .ab-rest {
         min-width: 30vw;
     }
+    #focus {
+        height: 70vh;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -508,6 +548,10 @@ audio::-webkit-media-controls-timeline {
         width:90%;
     
     }
+    #focus {
+        height: 90vh;
+    }
+    
 }
 
 @media screen and (min-width: 1250px) {
