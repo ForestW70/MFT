@@ -71,8 +71,14 @@ export const showNews = () => {
         newsCont.appendChild(newsProp);
 
         if (Math.random() >= .5) {
-            propaFrag.appendChild(newsCont);
+            if (Math.random() >= .5) {
+                propaFrag.appendChild(newsCont);
+            } else {
+                propaFrag.insertBefore(newsCont, propaFrag.firstChild);
+            } 
 
+
+// will be something maybe one day
             // plsStopCnt++;
             // if (plsStopCnt === 10) {
             //     const noNewsCont = document.createElement("article");
@@ -83,7 +89,12 @@ export const showNews = () => {
             //     propaFrag.appendChild(noNewsCont);
             // } 
         } else {
-            propaFrag.insertBefore(newsCont, propaFrag.firstChild);
+
+            if (Math.random() >= .5) {
+                propaFrag.appendChild(newsCont);
+            } else {
+                propaFrag.insertBefore(newsCont, propaFrag.firstChild);
+            }
         }
 
     });
