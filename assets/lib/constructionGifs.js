@@ -33,6 +33,42 @@ export const conGifs = [
     "http://textfiles.com/underconstruction/AtAthensDelphi2923construction.gif",
     "http://textfiles.com/underconstruction/ArArea51Shuttle1525underconstruct.gif",
     "http://textfiles.com/underconstruction/pentagonbarracks1178imagesunder-construction.gif",
+];
+
+const localConstruction = [
+    "/imgs/construction/con0.gif",
+    "/imgs/construction/con1.gif",
+    "/imgs/construction/con2.gif",
+    "/imgs/construction/con3.gif",
+    "/imgs/construction/con4.gif",
+    "/imgs/construction/con5.gif",
+    "/imgs/construction/con6.gif",
+    "/imgs/construction/con7.gif",
+    "/imgs/construction/con8.gif",
+    "/imgs/construction/con9.gif",
+    "/imgs/construction/con10.gif",
+    "/imgs/construction/con11.gif",
+    "/imgs/construction/con12.gif",
+    "/imgs/construction/con13.gif",
+    "/imgs/construction/con14.gif",
+    "/imgs/construction/con15.gif",
+    "/imgs/construction/con16.gif",
+    "/imgs/construction/con17.gif",
+    "/imgs/construction/con18.gif",
+    "/imgs/construction/con19.gif",
+    "/imgs/construction/con20.gif",
+    "/imgs/construction/con21.gif",
+    "/imgs/construction/con22.gif",
+    "/imgs/construction/con23.gif",
+    "/imgs/construction/con24.gif",
+    "/imgs/construction/con25.gif",
+    "/imgs/construction/con26.gif",
+    "/imgs/construction/con27.gif",
+    "/imgs/construction/con28.gif",
+    "/imgs/construction/con29.gif",
+    "/imgs/construction/con30.gif",
+    "/imgs/construction/con31.gif",
+    "/imgs/construction/smp0.jpg",
 ]
 
 export const flexCons = () => {
@@ -41,7 +77,7 @@ export const flexCons = () => {
     conCont.classList.add("con-grid");
 
     // gifs surrounding a questionable question in grid
-    conGifs.forEach((e, i) => {
+    localConstruction.forEach((e, i) => {
         if (i === 4) {
             const contract4U = document.createElement("div");
             const inq = document.createElement("p");
@@ -71,14 +107,14 @@ export const flexCons = () => {
         } else {
             const img = document.createElement("img");
             img.classList.add("allum")
-            img.src = e;
+            img.src = "https://marblefreedomtrust.us/assets" + e;
             // conCont.appendChild(img);
             if (Math.random() >= .5) {
-                console.log("wee")
+                
                 conCont.insertBefore(img, conCont.firstChild);
                 allGifs.appendChild(conCont);
             } else {
-                console.log("woo")
+                
                 conCont.appendChild(img);
                 allGifs.appendChild(conCont);
             }

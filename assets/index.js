@@ -8,7 +8,7 @@ import { showHome, showAbout, showNews, showVideos, showBlog, showContact, showP
 
     switchBtns.forEach(e => {
         e.addEventListener("click", () => {
-            console.log(e.id);
+            
             switch (e.id) {
                 case "home":
                     showHome();
@@ -32,7 +32,7 @@ import { showHome, showAbout, showNews, showVideos, showBlog, showContact, showP
                     showPriv();
                     break;
                 default:
-                    showNews();
+                    showAbout();
                     break;
             }
         });
@@ -71,5 +71,5 @@ import { showHome, showAbout, showNews, showVideos, showBlog, showContact, showP
     }
 
 
-    showHome();
+    showAbout();
 })();

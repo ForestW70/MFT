@@ -9,22 +9,14 @@ privP.classList.add("priv-pol")
 
 preamble.innerHTML = `
 
-    Hey, Jamie here again! So our developer refused to workshop and write out our Terms agreement & privacy statement... 
-    I'll have to speak with our CFO about a possible additonal stiphon to help incentivise him to work harder, but in the meantime, 
-    I found that one of our favorite sites over at The Trust, Nuwber, had their Terms and Privacy use almost the exact verbage that we would use,
-    so we're just going to do a little copy and paste job until we get this sorted out! For the sake of legality, please keep the following in mind when reading the info below:
-    1) All mentions of 'Nuwber', 'Nuwber.com', and related should be replaced with Marble Freedom Trust, marblefreedomtrust.us, and related correlations. 
-    2) All mentions of location 'Alexandria', 'VA', and other locationary information should be swapped with 'North Salt Lake City, UT'. Home town represent!
-    3) We do not have a Phone number or contact email (yet!), but feel free to voice all questions comments and concers too the phone and email provided below.
-    4) Here's the big one. NO SUING! Not like you can make us disclose our ties and identity anyways, so good luck trying!
-    With that out of the way, please read our conditions below. They're mad good!
+    Our mission statement: this is all a joke <@:-) -Jamie
 
 `
 
 termsP.innerHTML = `
-Nuwber Terms of Use and Terms & Conditions of Sale
+Marble Freedom Trust Terms of Use and Terms & Conditions of Sale
             PLEASE READ THESE TERMS OF USE AND TERMS AND CONDITIONS OF SALE CAREFULLY BEFORE ACCESSING, USING, OR MAKING
-            ANY PURCHASE OF SERVICES OR PRODUCTS OVER WWW.NUWBER.COM (THE “WEBSITE”). BY ACCESSING, USING, OR MAKING ANY
+            ANY PURCHASE OF SERVICES OR PRODUCTS OVER marblefreedomtrust.us (THE “WEBSITE”). BY ACCESSING, USING, OR MAKING ANY
             PURCHASE OF SERVICES OR PRODUCTS OVER THE WEBSITE, YOU ACCEPT AND AGREE TO THESE TERMS OF USE AND TERMS AND
             CONDITIONS OF SALE (“TERMS”). THESE TERMS CONTAIN DISCLAIMERS OF WARRANTIES AND EXCLUSIONS (see Section 13)
             AND LIMITATION OF LIABILITIES (see Section 14). THESE TERMS FORM AN ESSENTIAL BASIS OF OUR AGREEMENT. PLEASE
@@ -36,8 +28,8 @@ Nuwber Terms of Use and Terms & Conditions of Sale
             CAREFULLY REVIEW THE DISPUTE RESOLUTION PROVISIONS IN SECTION 17 BELOW WHICH ALSO DESCRIBES YOUR RIGHT TO
             OPT-OUT.
 
-            The Website is owned and operated by Nuwber Inc., a Virginia corporation (“we”, “us” or “our” as
-            appropriate), which offers search and background information services (the “Services”) at nuwber.com where
+            The Website is owned and operated by Marble Freedom Trust Inc., a Virginia corporation (“we”, “us” or “our” as
+            appropriate), which offers search and background information services (the “Services”) at marblefreedomtrust.us where
             the user (“you”, “your” or “yours” as appropriate) accesses the Services.
 
             When using the Services, you represent and agree to the following:
@@ -54,7 +46,7 @@ Nuwber Terms of Use and Terms & Conditions of Sale
 
             We reserve the right to update and change, from time to time, these Terms and all documents incorporated by
             reference by posting updates and/or changes to our Website. It is your responsibility to check this page
-            periodically for changes. You can find the most recent version of these Terms at www.nuwber.com. Use of the
+            periodically for changes. You can find the most recent version of these Terms at marblefreedomtrust.us. Use of the
             Website after such changes constitutes acceptance of such changes. Any new features or tools which are added
             to the current Website shall also be subject to the Terms.
 
@@ -230,12 +222,12 @@ Nuwber Terms of Use and Terms & Conditions of Sale
             nor are they a comprehensive compilation of the data.
 
             To request that information about you be removed from the Website, please use our opt-out tool available on
-            https://nuwber.com/removal/link. This tool is only intended to remove information available through our
+            https://marblefreedomtrust.us/support/suck_our_hot_cock. This tool is only intended to remove information available through our
             Website and cannot be used to remove it from third-party sources (e.g. we are not able to remove your
             information from other sites or Google). Removal of your information from the Website is completely free.
 
             4. FAIR CREDIT REPORTING ACT (FCRA) NOTICE
-            NUWBER, INC. AND NUWBER.COM ARE NOT CREDIT REPORTING AGENCIES FOR PURPOSES OF THE FAIR CREDIT REPORTING ACT
+            Marble Freedom Trust, INC. AND marblefreedomtrust.us ARE NOT CREDIT REPORTING AGENCIES FOR PURPOSES OF THE FAIR CREDIT REPORTING ACT
             (“FCRA”), 15 USC §§ 1681 et seq. AS SUCH, THE ADDITIONAL PROTECTIONS AFFORDED TO CONSUMERS, AND OBLIGATIONS
             PLACED UPON CREDIT REPORTING AGENCIES, ARE NOT CONTEMPLATED BY, NOR CONTAINED WITHIN, THE AGREEMENT.
 
@@ -336,8 +328,8 @@ Nuwber Terms of Use and Terms & Conditions of Sale
             All payments are payable in United States currency via the methods of payment provided on the Website, and
             all orders are subject to applicable taxes in the states where you reside. By ordering a Service or product
             through the Website, you authorize us to charge your credit or payment account accordingly. The subject line
-            (descriptor) that appears on your billing statement will refer to NUWBER INC>ALEXANDRIA US. If you have any
-            questions about your billing statement, please feel free to contact us at support@nuwber.com or otherwise
+            (descriptor) that appears on your billing statement will refer to Marble Freedom Trust INC>North Salt Lake City, UT, US. If you have any
+            questions about your billing statement, please feel free to contact us at admin@burnthis.space or otherwise
             contact our customer support line at +1 (844) 912-1292.
 
             7. SUBSCRIPTIONS AND RECURRING AUTOMATIC PAYMENTS
@@ -382,7 +374,7 @@ Nuwber Terms of Use and Terms & Conditions of Sale
 
             8. CANCELLATION POLICY
             You may cancel your Subscription plan at any time by signing on to your account, contacting us at
-            support@nuwber.com, or calling our customer support line at +1 (844) 912-1292. Our customer service line is
+            admin@burnthis.space, or calling our customer support line at +1 (844) 912-1292. Our customer service line is
             open from 9:00 AM to 9:00 PM EST. In case of cancellation, Subscription-based features will still be
             available for your use until the end of your current billing period. Once the billing period is over, your
             payment method will no longer be charged and access to Subscription-based features will be revoked. You
@@ -394,7 +386,7 @@ Nuwber Terms of Use and Terms & Conditions of Sale
 
             9. REFUND POLICY
             If you are not satisfied with your Subscription or our Services, please feel free to contact us at
-            support@nuwber.com or call our customer support line +1 (844) 912-1292 and we will work with you to attempt
+            admin@burnthis.space or call our customer support line +1 (844) 912-1292 and we will work with you to attempt
             to resolve your issue. We address each refund request on a case-by-case basis and may grant a refund request
             partially or in full depending on your circumstances.
 
@@ -410,7 +402,7 @@ Nuwber Terms of Use and Terms & Conditions of Sale
             proprietary right to you or any other person. You do not acquire any ownership rights to the Website,
             Services, content or any other information obtained from the Website and/or Services.
 
-            All intellectual property rights in the name “Nuwber” and “Nuwber.com”, our logos, designs, trademarks and
+            All intellectual property rights in the name “Marble Freedom Trust” and “marblefreedomtrust.us”, our logos, designs, trademarks and
             other distinctive brand features are owned by us. You agree not to display or use such logos, designs,
             trademarks and other distinctive brand features in any manner without our prior written consent.
 
@@ -585,7 +577,7 @@ Nuwber Terms of Use and Terms & Conditions of Sale
             describes the nature and basis of the claim or dispute and sets forth the relief sought. If you and we do
             not reach an agreement to resolve that claim or dispute within 30 days after the notice is received, you or
             we may commence an arbitration. Written notice that you are initiating arbitration must be sent via postal
-            mail to: ATTN: Arbitration Notice, Nuwber, Inc., 700 North Fairfax Street, Suite 614, Alexandria, VA 22314.
+            mail to: ATTN: Arbitration Notice, Marble Freedom Trust, 700 N Fairfax St Suite 614, Alexandria, VA 22314, USA.
 
             If we initiate arbitration against you, we will send you notice of such initiation to the mailing address
             you have provided as well as to the e-mail address you have provided. Receipt of such notice by you will be
@@ -621,7 +613,7 @@ Nuwber Terms of Use and Terms & Conditions of Sale
 
             YOU HAVE THE RIGHT TO OPT-OUT OF THIS ARBITRATION PROVISION WITHIN THIRTY (30) DAYS FROM THE DATE THAT YOU
             PURCHASE, USE, OR ATTEMPT TO USE A SERVICE PURCHASED ON OR THROUGH THE WEBSITE (WHICHEVER COMES FIRST) BY
-            WRITING TO US AT SUPPORT@NUWBER.COM. IF MORE THAN THIRTY (30) DAYS HAVE PASSED, YOU ARE NOT ELIGIBLE TO OPT
+            WRITING TO US AT admin@burnthis.space. IF MORE THAN THIRTY (30) DAYS HAVE PASSED, YOU ARE NOT ELIGIBLE TO OPT
             OUT OF THIS PROVISION AND YOU MUST PURSUE YOUR CLAIM THROUGH BINDING ARBITRATION AS SET FORTH IN THIS
             AGREEMENT.
 
@@ -718,25 +710,25 @@ Nuwber Terms of Use and Terms & Conditions of Sale
             Terms may not be amended by you.
 
             26. CONTACT INFORMATION
-            Questions about the Terms should be sent to support@nuwber.com.
+            Questions about the Terms should be sent to admin@burnthis.space.
 
             Date of Last Revision: April 21, 2021
 `
 
 privP.innerHTML = `
 
-            Nuwber Privacy Policy
-            This Privacy Policy applies across nuwber.com and all subdomains, the website that we own and operate, and
+Marble Freedom Trust Privacy Policy
+            This Privacy Policy applies across marblefreedomtrust.us and all subdomains, the website that we own and operate, and
             all services we provide, including our online and mobile services and products. For the purpose of this
             Policy we will call them our “Website” and “Services”. This Privacy Policy explains the information
-            practices of Nuwber, Inc. on the Website and in connection with the Services. This Privacy Policy is only
+            practices of Marble Freedom Trust, Inc. on the Website and in connection with the Services. This Privacy Policy is only
             applicable to the Website and not to any other websites you may be able to access from the Website. Such
             websites are third-party websites that may have data collection, use, and storage practices that are
-            different from Nuwber, Inc.’s Privacy Policy. We are not responsible for data collection and use policies of
+            different from Marble Freedom Trust, Inc.’s Privacy Policy. We are not responsible for data collection and use policies of
             third-party websites. We encourage you to review the privacy policies and other terms available on
             third-party websites before you use them.
 
-            When we refer to “we” (or “our” or “us”), that means Nuwber, Inc., a Virginia corporation. When we refer to
+            When we refer to “we” (or “our” or “us”), that means Marble Freedom Trust, Inc., a Virginia corporation. When we refer to
             “you” (or “your” or “yours”), that means you as a user of our Services. When we say “Personal Data,” we mean
             identifiable information about you, like your name, email, address, other demographic information, telephone
             number, payment account details (including credit and debit card numbers), payment information, support
@@ -753,7 +745,7 @@ privP.innerHTML = `
 
             2. How to Opt Out
             To request that Public Information about you be removed from the Website’s people search, please use our
-            opt-out tool available at https://nuwber.com/removal/link. This tool is only intended to remove Public
+            opt-out tool available at https://marblefreedomtrust.us/tools/leos_tool6. This tool is only intended to remove Public
             Information available through our Website and cannot be used to remove it from third-party sources (e.g. we
             are not able to remove your information from other sites or Google). Removal of your information from the
             Website is completely free. When you submit a request to opt out, we ask you to provide an email address. We
@@ -909,10 +901,10 @@ privP.innerHTML = `
             about our services and products by e-mail, as well as for us to communicate with you about your account,
             purchases, and subscriptions, at the e-mail address provided. If you subsequently decide that you wish to no
             longer receive marketing e-mails, please follow the instructions at the end of any email message to
-            unsubscribe or e-mail us at support@nuwber.com and request to unsubscribe. Please allow up to 10 business
+            unsubscribe or e-mail us at admin@burnthis.space and request to unsubscribe. Please allow up to 10 business
             days for any removal request to be processed. Please note that if you decide not to receive marketing emails
             from us, you may still receive transactional email messages regarding your account and subscription. If you
-            have questions or concerns regarding this provision, please contact us by e-mail at support@nuwber.com.
+            have questions or concerns regarding this provision, please contact us by e-mail at admin@burnthis.space.
 
             9. Third-Parties’ Links
             The Website may contain links leading to other sites. This Policy covers our use of cookies only and does
@@ -942,7 +934,7 @@ privP.innerHTML = `
 
             Use of your name and email address for sending you alerts or information on features, products and
             promotions related to our Services (you can opt out from these emails at any time, including by sending your
-            request to support@nuwber.com);
+            request to admin@burnthis.space);
             Collection of information by automated means, such as cookies or other tracking technologies, and to our
             subsequent processing and using of information in accordance with this Policy and the Terms; and
             Storage and transfer of your Personal Data to locations wherever we and our service providers have
@@ -1040,7 +1032,7 @@ privP.innerHTML = `
             Right to Opt-out
 
             You have the right, at any time, to request that we not sell your Personal Data. As stated in Section 2
-            above, you can use the tool available at https://nuwber.com/removal/link to request information about you to
+            above, you can use the tool available at https://marblefreedomtrust.us/support/we_will_sell_yr_data to request information about you to
             be removed from the Website’s people search.
 
             Right to Non-discrimination
@@ -1050,7 +1042,7 @@ privP.innerHTML = `
             Submitting Requests under the CCPA
 
             You or an authorized agent acting on your behalf can exercise the rights above by contacting us at
-            support@nuwber.com or +1 (844) 912-1292 (during business hours). You may only exercise your right to know up
+            admin@burnthis.space or +1 (844) 912-1292 (during business hours). You may only exercise your right to know up
             to two different times in a 12 month period. When you submit a request, we may ask you to fill out a request
             form. The CCPA only allows us to act on your request if we can verify your identity or your authority to
             make the request, so you will also need to follow our instructions for identity verification.
@@ -1109,7 +1101,7 @@ privP.innerHTML = `
             18. Changing or Updating Your Personal Data
             We take reasonable steps to ensure that the Personal Data we hold about you is accurate, complete and
             up-to-date. However, we rely on you to advise us of any changes to your Personal Data. Please log into your
-            account or contact us as at support@nuwber.com as soon as possible if there are any changes to your Personal
+            account or contact us as at admin@burnthis.space as soon as possible if there are any changes to your Personal
             Data or if you believe the Personal Data we hold about you is not accurate, complete or up-to-date so that
             we can update our records accordingly.
 

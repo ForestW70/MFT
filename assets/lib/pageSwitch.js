@@ -1,4 +1,5 @@
 import { blogPosts } from "./blogs.js";
+import { aboutInfo } from "./about.js";
 import { flexTerms } from "./showTerms.js";
 import { flexCons } from "./constructionGifs.js";
 import { createPlayer } from "./showPlayer.js";
@@ -17,7 +18,7 @@ export const showHome = () => {
 
     banDiv.classList.add("yealol");
     consImg.src = "https://i.gifer.com/51L3.gif";
-    
+
     banDiv.appendChild(consImg);
     propaFrag.appendChild(banDiv);
 
@@ -28,19 +29,66 @@ export const showHome = () => {
 // About page view *empty*
 export const showAbout = () => {
     const propaFrag = document.createDocumentFragment();
-    const consImg = document.createElement("img");
-    consImg.classList.add("under-con");
-    consImg.src = "https://c.tenor.com/X6i3RTlXpmAAAAAM/under-construction-men-at-work.gif";
+    // const consImg = document.createElement("img");
+    // consImg.classList.add("under-con");
+    // consImg.src = "https://c.tenor.com/X6i3RTlXpmAAAAAM/under-construction-men-at-work.gif";
 
-    const consText = document.createElement("span");
-    consText.innerText = "Page Under Construction! Come back soon ♥";
-    consText.classList.add("cons-blurb");
+    // const consText = document.createElement("span");
+    // consText.innerText = "Page Under Construction! Come back soon ♥";
+    // consText.classList.add("cons-blurb");
 
-    propaFrag.appendChild(consImg);
-    propaFrag.appendChild(consText);
+
+
+    const buildAbout = (abStuffs) => {
+        const aboutFrag = document.createDocumentFragment();
+        abStuffs.map(e => {
+            if (e.type === "h2") {
+                const heddy = document.createElement("h2");
+                heddy.classList.add("ab-head");
+                heddy.innerText = e.body;
+                aboutFrag.appendChild(heddy);
+            } else if (e.type === "p") {
+                const par = document.createElement("p");
+                par.classList.add("ab-pp");
+                par.innerText = e.body;
+                aboutFrag.appendChild(par);
+            } else {
+                // const rest = document.createElement("span");
+                // rest.classList.add("ab-rest");
+                // rest.innerText = e.body;
+                // aboutFrag.appendChild(rest);
+                
+                e.body.map(ee => {
+                    const srcs = document.createElement("div");
+                    srcs.classList.add("ab-rest");
+                    const srcN = document.createElement("span");
+                    const srcA = document.createElement("a");
+                    srcN.innerText = `[${ee.loc}]`;
+                    srcA.innerText = ee.item;
+                    srcA.href = ee.src;
+                    srcA.target = "blank";
+                    srcs.appendChild(srcN);
+                    srcs.appendChild(srcA);
+                    aboutFrag.appendChild(srcs);
+                })
+            }
+        });
+
+        return aboutFrag;
+    }
+    // propaFrag.appendChild(consImg);
+    propaFrag.appendChild(buildAbout(aboutInfo));
 
     propaView.innerText = "";
     propaView.appendChild(propaFrag);
+
+    const learnMore = document.createElement("button");
+    learnMore.id = "lmBtn";
+    learnMore.innerText = "Learn More"
+    learnMore.addEventListener("click", (e) => {
+        showNews();
+    })
+    propaView.appendChild(learnMore);
 }
 
 // News Articles view
@@ -60,6 +108,7 @@ export const showNews = () => {
         newsTit.innerText = e.title;
         newsAbs.innerText = e.body;
         newsAuth.innerText = `${e.source}, ${e.author}, ${e.date}`;
+        newsAuth.classList.add("go-2-story")
         newsProp.innerText = `shared by: ${e.poster}`;
 
         newsAuth.href = e.link;
@@ -118,14 +167,14 @@ export const showBlog = () => {
     const viewOrder = document.createElement("p");
     viewOrder.classList.add("blog-order");
     viewOrder.innerText = "Showing newest first";
-    
+
     // change view order
     let viewVar = 1;
     viewOrder.addEventListener("click", () => {
         if (viewVar === 1) {
             viewVar = 0;
             viewOrder.innerText = "Showing oldest first";
-           
+
         } else {
             viewVar = 1;
             viewOrder.innerText = "Showing newest first";
@@ -166,7 +215,7 @@ export const showBlog = () => {
 
             // change render dir based on var
             viewVar === 0 ? propaFrag.insertBefore(pCont, propaFrag.firstChild) : propaFrag.appendChild(pCont);
-            
+
         });
         const hider = document.createElement("div");
         hider.classList.add("hide-blog");
@@ -174,7 +223,7 @@ export const showBlog = () => {
         myConstruc.src = "https://thumbs.gfycat.com/SleepySadAegeancat-max-1mb.gif";
         const consMessage = document.createElement("p");
         consMessage.innerText = "We'll be right back! -♥Admin";
-        
+
         hider.appendChild(myConstruc);
         hider.appendChild(consMessage);
 
